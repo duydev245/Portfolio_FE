@@ -257,3 +257,47 @@ footer a {
 footer a:hover {
     color: #35a22c;
 }
+
+/* breakpoint */
+
+/* min width ~ tối thiểu ~ mobile first ~ responsive từ nhỏ đến lớn */
+
+/* max width ~ tối đa ~ desktop first */
+
+@media screen and (min-width: 768px) {
+
+    /* đối với màn hình có kích thước lớn hơn 768px */
+    /* footer {
+        background: black;
+    } */
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* đối với màn hình có kích thước lớn hơn 1200px */
+    /* footer {
+        background: black;
+    } */
+}
+
+@media screen and (max-width: 1200px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        /* font-size: 62.5%; */
+        font-size: 12px;
+    }
+
+    /* đối với màn hình có kích thước nhỏ hơn 992px */
+    /* header {
+        background: black;
+    } */
+
+    /* header .navbar-brand{
+        font-size: 18px;
+    } */
+}
