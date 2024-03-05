@@ -1,0 +1,259 @@
+/* start header */
+
+header .nav-link,
+header .navbar-brand {
+    color: white;
+    transition: 0.3s;
+}
+
+header .nav-link:hover,
+header .nav-link.active {
+    color: #35a22c !important;
+}
+
+header .navbar-brand i {
+    color: #35a22c;
+}
+
+header .navbar-brand {
+    font-size: 26px;
+}
+
+header .nav-item {
+    position: relative;
+    margin-left: 20px;
+}
+
+header .nav-item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: #35a22c;
+    transition: 0.3s;
+}
+
+header .nav-item:hover::before,
+header .nav-item.active::before {
+    width: 100%;
+}
+
+/* start slider */
+.carousel-item img {
+    height: 100vh;
+    /* vh ~ view height ~ chiều cao màn hình user */
+    min-height: 500px;
+    /* min-height ~ chiều cao tối thiểu */
+    object-fit: cover;
+    /* object-fit ~ background-size */
+}
+
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(39, 43, 54, .3);
+}
+
+.carousel-caption img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    min-height: unset;
+    /* unset ~ remove value trước đó nếu có */
+}
+
+.carousel-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #35a22c;
+}
+
+.carousel-indicators {
+    bottom: 60px;
+}
+
+/* start projects */
+.projects .nav-pills .nav-link.active {
+    background-color: #35a22c;
+    color: #fff;
+    border-color: #35a22c;
+}
+
+.projects .nav-pills .nav-link {
+    color: black;
+    border: 1px solid black;
+    margin: 0 5px;
+}
+
+.card {
+    cursor: pointer;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.projects .card-body {
+    border: 1px solid transparent;
+    border-top: none;
+    /* border-radius: 16px; */
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+/* */
+
+.card .card-body {
+    transition: 0.3s;
+}
+
+.card:hover .card-body {
+    border-color: #35a22c;
+}
+
+.card h5 {
+    transition: 0.3s;
+}
+
+.card:hover h5 {
+    color: #35a22c;
+}
+
+/* start skill */
+.skill {
+    background-image: url(./image/3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    color: #fff;
+}
+
+.skill::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(39, 43, 54, .3);
+}
+
+.skill .container {
+    position: relative;
+    z-index: 100;
+}
+
+.skill__item {
+    padding: 50px;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .1);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.skill__item:hover {
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.skill__item i {
+    font-size: 50px;
+    color: #35a22c;
+}
+
+.skill__item h4 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 25px 0;
+}
+
+/* Start Achievement */
+.achivement {
+    position: relative;
+}
+
+.achivement::after {
+    content: "";
+    position: absolute;
+    background-image: url(./image/memphis_3.png);
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.achivement__title {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 16px;
+    padding: 45px;
+}
+
+.achivement__title h2 {
+    font-size: 36px;
+    line-height: 42px;
+    color: #1a1d2d;
+    font-weight: 600;
+}
+
+.achivement__title p {
+    color: #585858;
+    line-height: 24px;
+}
+
+/* start footer */
+footer {
+    background: #222;
+}
+
+.footer__icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    transition: 0.3s;
+}
+
+.footer__icon:hover {
+    color: #35a22c;
+    border: 1px solid #35a22c;
+}
+
+footer p,
+a {
+    color: #aaa;
+}
+
+footer a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+footer a:hover {
+    color: #35a22c;
+}
